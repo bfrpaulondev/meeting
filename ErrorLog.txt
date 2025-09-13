@@ -1,0 +1,1110 @@
+------------- ERROR - Type 1 -------------
+26/02/2025 17:48:02
+Não é possível definir Visibility ou chamar Show, ShowDialog, Close ou WindowInteropHelper.EnsureHandle depois de Window ser fechado.
+   em System.Windows.Window.VerifyCanShow()
+   em System.Windows.Window.Show()
+   em System.Windows.Window.OnClosing(CancelEventArgs e)
+   em System.Windows.Window.WmClose()
+   em System.Windows.Window.WindowFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em System.Windows.Interop.HwndSource.PublicHooksFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+166592512
+Is 64bit windows: True
+215  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
+------------- ERROR - Type 1 -------------
+03/04/2025 19:58:33
+A referência de objecto não foi definida como uma instância de um objecto.
+   em MA.Sections.Timer.TimePresetsList_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+   em System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   em System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   em System.Windows.Controls.ListBox.OnSelectionChanged(SelectionChangedEventArgs e)
+   em System.Windows.Controls.Primitives.Selector.SelectionChanger.End()
+   em System.Windows.Controls.Primitives.Selector.OnItemsChanged(NotifyCollectionChangedEventArgs e)
+   em System.Collections.Specialized.NotifyCollectionChangedEventHandler.Invoke(Object sender, NotifyCollectionChangedEventArgs e)
+   em System.Windows.Data.CollectionView.OnCollectionChanged(NotifyCollectionChangedEventArgs args)
+   em System.Windows.WeakEventManager.ListenerList`1.DeliverEvent(Object sender, EventArgs e, Type managerType)
+   em System.Windows.WeakEventManager.DeliverEvent(Object sender, EventArgs args)
+   em System.Windows.Data.CollectionView.OnCollectionChanged(NotifyCollectionChangedEventArgs args)
+   em System.Windows.Data.ListCollectionView.RefreshOverride()
+   em System.Windows.Data.CollectionView.RefreshInternal()
+   em System.Windows.Data.CollectionView.EndDefer()
+   em System.Windows.Data.CollectionView.DeferHelper.Dispose()
+   em System.Windows.Controls.ItemCollection.SetCollectionView(CollectionView view)
+   em System.Windows.Controls.ItemsControl.OnItemsSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   em System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   em System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   em System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   em System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   em System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   em System.Windows.Controls.ItemsControl.set_ItemsSource(IEnumerable value)
+   em MA.Sections.Timer.InitSettings()
+   em MA.MainWindow.StartSession()
+   em MA.MainWindow.Login(Object sender, RoutedEventArgs e)
+   em System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   em System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   em System.Windows.Controls.ListBox.OnSelectionChanged(SelectionChangedEventArgs e)
+   em System.Windows.Controls.Primitives.Selector.SelectionChanger.End()
+   em System.Windows.Controls.Primitives.Selector.SelectionChanger.SelectJustThisItem(ItemInfo info, Boolean assumeInItemsCollection)
+   em System.Windows.Controls.ListBox.MakeSingleSelection(ListBoxItem listItem)
+   em System.Windows.Controls.ListBoxItem.HandleMouseButtonDown(MouseButton mouseButton)
+   em System.Windows.Controls.ListBoxItem.OnMouseLeftButtonDown(MouseButtonEventArgs e)
+   em System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   em System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   em System.Windows.UIElement.OnMouseDownThunk(Object sender, MouseButtonEventArgs e)
+   em System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   em System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   em System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   em System.Windows.Input.InputManager.ProcessStagingArea()
+   em System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   em System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   em System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   em System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ErrorLog.txt
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+167432192
+Is 64bit windows: True
+4  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
+------------- ERROR - Type 1 -------------
+03/04/2025 20:07:16
+'-2' não é um valor válido para a propriedade 'SelectedIndex'.
+   em System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   em System.Windows.DependencyObject.SetValue(DependencyProperty dp, Object value)
+   em MA.Sections.Timer.TimePresetsUp_Click(Object sender, RoutedEventArgs e)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   em System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   em System.Windows.Controls.Button.OnClick()
+   em System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   em System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   em System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   em System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   em System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   em System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   em System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   em System.Windows.Input.InputManager.ProcessStagingArea()
+   em System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   em System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   em System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   em System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ErrorLog.txt
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+170381312
+Is 64bit windows: True
+13  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
+------------- ERROR - Type 1 -------------
+04/05/2025 09:54:08
+Não é possível definir Visibility ou chamar Show, ShowDialog, Close ou WindowInteropHelper.EnsureHandle depois de Window ser fechado.
+   em System.Windows.Window.VerifyCanShow()
+   em System.Windows.Window.Show()
+   em System.Windows.Window.OnClosing(CancelEventArgs e)
+   em System.Windows.Window.InternalClose(Boolean shutdown, Boolean ignoreCancel)
+   em System.Windows.Application.DoShutdown()
+   em System.Windows.Application.ShutdownImpl()
+   em System.Windows.Application.ShutdownCallback(Object arg)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ErrorLog.txt
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+71507968
+Is 64bit windows: True
+944  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
+------------- ERROR - Type 1 -------------
+04/05/2025 09:54:51
+Não é possível definir Visibility ou chamar Show, ShowDialog, Close ou WindowInteropHelper.EnsureHandle depois de Window ser fechado.
+   em System.Windows.Window.VerifyCanShow()
+   em System.Windows.Window.Show()
+   em System.Windows.Window.OnClosing(CancelEventArgs e)
+   em System.Windows.Window.InternalClose(Boolean shutdown, Boolean ignoreCancel)
+   em System.Windows.Application.DoShutdown()
+   em System.Windows.Application.ShutdownImpl()
+   em System.Windows.Application.ShutdownCallback(Object arg)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ErrorLog.txt
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+70504448
+Is 64bit windows: True
+945  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
+------------- ERROR - Type 1 -------------
+03/06/2025 21:14:36
+A referência de objecto não foi definida como uma instância de um objecto.
+   em MA.Sections.Timer.TimePresetsList_SelectionChanged(Object sender, SelectionChangedEventArgs e)
+   em System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   em System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   em System.Windows.Controls.ListBox.OnSelectionChanged(SelectionChangedEventArgs e)
+   em System.Windows.Controls.Primitives.Selector.SelectionChanger.End()
+   em System.Windows.Controls.Primitives.Selector.OnItemsChanged(NotifyCollectionChangedEventArgs e)
+   em System.Collections.Specialized.NotifyCollectionChangedEventHandler.Invoke(Object sender, NotifyCollectionChangedEventArgs e)
+   em System.Windows.Data.CollectionView.OnCollectionChanged(NotifyCollectionChangedEventArgs args)
+   em System.Windows.WeakEventManager.ListenerList`1.DeliverEvent(Object sender, EventArgs e, Type managerType)
+   em System.Windows.WeakEventManager.DeliverEvent(Object sender, EventArgs args)
+   em System.Windows.Data.CollectionView.OnCollectionChanged(NotifyCollectionChangedEventArgs args)
+   em System.Windows.Data.ListCollectionView.RefreshOverride()
+   em System.Windows.Data.CollectionView.RefreshInternal()
+   em System.Windows.Data.CollectionView.EndDefer()
+   em System.Windows.Data.CollectionView.DeferHelper.Dispose()
+   em System.Windows.Controls.ItemCollection.SetCollectionView(CollectionView view)
+   em System.Windows.Controls.ItemsControl.OnItemsSourceChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   em System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   em System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   em System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   em System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   em System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   em System.Windows.Controls.ItemsControl.set_ItemsSource(IEnumerable value)
+   em MA.Sections.Timer.InitSettings()
+   em MA.MainWindow.StartSession()
+   em MA.MainWindow.Login(Object sender, RoutedEventArgs e)
+   em System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   em System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   em System.Windows.Controls.ListBox.OnSelectionChanged(SelectionChangedEventArgs e)
+   em System.Windows.Controls.Primitives.Selector.SelectionChanger.End()
+   em System.Windows.Controls.Primitives.Selector.SelectionChanger.SelectJustThisItem(ItemInfo info, Boolean assumeInItemsCollection)
+   em System.Windows.Controls.ListBox.MakeSingleSelection(ListBoxItem listItem)
+   em System.Windows.Controls.ListBoxItem.HandleMouseButtonDown(MouseButton mouseButton)
+   em System.Windows.Controls.ListBoxItem.OnMouseLeftButtonDown(MouseButtonEventArgs e)
+   em System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   em System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   em System.Windows.UIElement.OnMouseDownThunk(Object sender, MouseButtonEventArgs e)
+   em System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   em System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   em System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   em System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   em System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   em System.Windows.Input.InputManager.ProcessStagingArea()
+   em System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   em System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   em System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   em System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ErrorLog.txt
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+169414656
+Is 64bit windows: True
+91  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
+------------- ERROR - Type 1 -------------
+29/07/2025 19:33:13
+Não é possível definir Visibility ou chamar Show, ShowDialog, Close ou WindowInteropHelper.EnsureHandle depois de Window ser fechado.
+   em System.Windows.Window.VerifyCanShow()
+   em System.Windows.Window.Show()
+   em System.Windows.Window.OnClosing(CancelEventArgs e)
+   em System.Windows.Window.WmClose()
+   em System.Windows.Window.WindowFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em System.Windows.Interop.HwndSource.PublicHooksFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ErrorLog.txt
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+135278592
+Is 64bit windows: True
+14540  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
+------------- ERROR - Type 1 -------------
+13/09/2025 18:25:55
+Não é possível definir Visibility ou chamar Show, ShowDialog, Close ou WindowInteropHelper.EnsureHandle depois de Window ser fechado.
+   em System.Windows.Window.VerifyCanShow()
+   em System.Windows.Window.Show()
+   em System.Windows.Window.OnClosing(CancelEventArgs e)
+   em System.Windows.Window.WmClose()
+   em System.Windows.Window.WindowFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em System.Windows.Interop.HwndSource.PublicHooksFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ErrorLog.txt
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+163401728
+Is 64bit windows: True
+2  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
+------------- ERROR - Type 1 -------------
+13/09/2025 18:47:33
+Não é possível definir Visibility ou chamar Show, ShowDialog, Close ou WindowInteropHelper.EnsureHandle depois de Window ser fechado.
+   em System.Windows.Window.VerifyCanShow()
+   em System.Windows.Window.Show()
+   em System.Windows.Window.OnClosing(CancelEventArgs e)
+   em System.Windows.Window.WmClose()
+   em System.Windows.Window.WindowFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em System.Windows.Interop.HwndSource.PublicHooksFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   em MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ErrorLog.txt
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+164904960
+Is 64bit windows: True
+24  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
+------------- ERROR - Type 1 -------------
+13/09/2025 20:07:58
+Não é possível definir Visibility ou chamar Show, ShowDialog, Close ou WindowInteropHelper.EnsureHandle depois de Window ser fechado.
+   em System.Windows.Window.VerifyCanShow()
+   em System.Windows.Window.Show()
+   em System.Windows.Window.OnClosing(CancelEventArgs e)
+   em System.Windows.Window.InternalClose(Boolean shutdown, Boolean ignoreCancel)
+   em System.Windows.Application.DoShutdown()
+   em System.Windows.Application.ShutdownImpl()
+   em System.Windows.Application.ShutdownCallback(Object arg)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ErrorLog.txt
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+71438336
+Is 64bit windows: True
+80  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
+------------- ERROR - Type 1 -------------
+13/09/2025 20:09:00
+Não é possível definir Visibility ou chamar Show, ShowDialog, Close ou WindowInteropHelper.EnsureHandle depois de Window ser fechado.
+   em System.Windows.Window.VerifyCanShow()
+   em System.Windows.Window.Show()
+   em System.Windows.Window.OnClosing(CancelEventArgs e)
+   em System.Windows.Window.InternalClose(Boolean shutdown, Boolean ignoreCancel)
+   em System.Windows.Application.DoShutdown()
+   em System.Windows.Application.ShutdownImpl()
+   em System.Windows.Application.ShutdownCallback(Object arg)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+---------------  FILES INSTALLED  -------------- 
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\App.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.SqlServer.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\EntityFramework.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ErrorLog.txt
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\ffreport.log
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\HtmlAgilityPack.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA - Cópia.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.exe_copia.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.pdb
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MA.vshost.exe.manifest
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\MASettings.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\policy.2.0.taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Settings.db
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.dll.config
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.EF6.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.Linq.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\System.Data.SQLite.xml
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\taglib-sharp.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\ffmpeg_32.exe
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\JWLibrary.lnk
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libgcc_s_dw2-1.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libmupdf.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\External\libx264-144.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\Images\StreamFillBackground.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.mp3
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\bell.ogg
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\boilerplate.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\index.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\jquery.min.js
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\login.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\time.css
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\rc\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-114x114.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-144x144.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-57x57.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\apple-icon-72x72.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\icon\vm\favicon.ico
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\1423690472_Power-Shutdown.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\business116.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\circularclock3.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2 (1).png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\RemoteControl\Html\img\remote2.png
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x64\SQLite.Interop.dll
+C:\Program Files (x86)\Ruben Reis\Meeting Assistant\x86\SQLite.Interop.dll
+--------------------  OS Info   ----------------- 
+MA Version: 1.1.0.0
+{Width=1920, Height=1080}
+C:\Windows\system32
+DESKTOP-JCCB6UJ
+70848512
+Is 64bit windows: True
+81  Minute(s)
+Microsoft Windows NT 6.2.9200.0
+4.0.30319.42000
+salao
+DESKTOP-JCCB6UJ
+Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+
+
+
+
+
+
