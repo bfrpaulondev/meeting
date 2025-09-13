@@ -1,0 +1,249 @@
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#box {
+    float: none;
+    height: 79.999125%;
+    clear: both;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+    -webkit-box-shadow: rgb(0, 0, 0) 0px 2px 24px -7px;
+    box-shadow: rgb(0, 0, 0) 0px 2px 24px -7px;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    min-height: 900px;
+}
+
+#text {
+    float: left;
+    font-size: 2.8em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 3.276321%;
+    margin-top: 21px;
+    clear: none;
+    min-height: 0px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: rgb(91, 91, 91);
+    margin-right: 0%;
+}
+
+#box1 {
+    float: none;
+    height: 460px;
+    margin-left: auto;
+    margin-top: 150.5px;
+    clear: none;
+    width: 473.578125px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    -webkit-box-shadow: rgb(0, 0, 0) 3px 2px 25px -8px;
+    box-shadow: rgb(0, 0, 0) 3px 2px 25px -8px;
+    max-width: 800px;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+#formgroup {
+    float: left;
+    height: auto;
+    display: block;
+    text-align: left;
+    margin-left: 10.406312%;
+    margin-top: 10px;
+    clear: none;
+    width: 80.836292%;
+}
+
+#text1 {
+    float: none;
+    font-size: 1.7em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    padding: 0.2em 0em;
+    display: block;
+}
+
+#text11 {
+    float: none;
+    font-size: 1.7em;
+    width: 450px;
+    height: 200px;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    padding: 0.2em 0em;
+    display: block;
+}
+
+#select {
+    float: none;
+    height: auto;
+    padding: 0px;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+}
+
+#start:hover {
+    background-image:-webkit-linear-gradient(270deg, rgb(139, 245, 130) 0%, rgb(8, 198, 0) 0%);
+    background-image: linear-gradient(180deg, rgb(139, 245, 130) 0%, rgb(8, 198, 0) 0%);
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#start:active {
+    background-image:-webkit-linear-gradient(270deg, rgb(139, 245, 130) 0%, rgb(6, 157, 0) 0%);
+    background-image: linear-gradient(180deg, rgb(139, 245, 130) 0%, rgb(6, 157, 0) 0%);
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#start:focus {
+    background-image:-webkit-linear-gradient(270deg, rgb(139, 245, 130) 0%, rgb(25, 163, 19) 100%);
+    background-image: linear-gradient(180deg, rgb(139, 245, 130) 0%, rgb(25, 163, 19) 100%);
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#start {
+    float: left;
+    height: 85.625px;
+    margin-left: 10.366558%;
+    margin-top: 3.875px;
+    clear: both;
+    width: 80.838057%;
+    display: block;
+    margin-right: 0%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-image:-webkit-linear-gradient(270deg, rgb(139, 245, 130) 0%, rgb(25, 163, 19) 100%);
+    background-image: linear-gradient(180deg, rgb(139, 245, 130) 0%, rgb(25, 163, 19) 100%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#text2 {
+    float: none;
+    font-size: 2em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: auto;
+    margin-top: 23px;
+    clear: none;
+    min-height: 45px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-right: auto;
+}
+
+#text1 {
+    float: left;
+    font-size: 8.4em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: 10.383055%;
+    margin-top: 2.25px;
+    clear: both;
+    min-height: 0px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#stop:hover {
+    background-image:-webkit-linear-gradient(270deg, rgb(160, 0, 0) 0%, rgb(165, 0, 0) 100%);
+    background-image: linear-gradient(180deg, rgb(160, 0, 0) 0%, rgb(165, 0, 0) 100%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#stop:active {
+    background-image:-webkit-linear-gradient(270deg, rgb(124, 0, 0) 0%, rgb(90, 0, 0) 100%);
+    background-image: linear-gradient(180deg, rgb(124, 0, 0) 0%, rgb(90, 0, 0) 100%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#stop:focus {
+    background-image:-webkit-linear-gradient(270deg, rgb(245, 130, 130) 0%, rgb(219, 45, 45) 100%);
+    background-image: linear-gradient(180deg, rgb(245, 130, 130) 0%, rgb(219, 45, 45) 100%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#stop {
+    float: left;
+    height: 85.625px;
+    margin-left: -81.028737%;
+    margin-top: 3.875px;
+    clear: none;
+    width: 80.838056%;
+    display: block;
+    margin-right: 0%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-image:-webkit-linear-gradient(270deg, rgb(245, 130, 130) 0%, rgb(219, 45, 45) 100%);
+    background-image: linear-gradient(180deg, rgb(245, 130, 130) 0%, rgb(219, 45, 45) 100%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    visibility: hidden;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#text3 {
+    float: none;
+    font-size: 2em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin-left: auto;
+    margin-top: 23px;
+    clear: none;
+    min-height: 45px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin-right: auto;
+}
+
