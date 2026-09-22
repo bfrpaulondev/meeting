@@ -1,1 +1,1046 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O que diria? — Orador | 6 min.</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #151b23;
+      --panel-2: #1b2430;
+      --text: #f3f6fa;
+      --muted: #a9b4c1;
+      --accent: #7cc7ff;
+      --accent-2: #9ee6c1;
+      --warning: #ffd166;
+      --danger: #ff8b8b;
+      --line: rgba(255,255,255,.10);
+      --shadow: 0 22px 70px rgba(0,0,0,.35);
+      --speaker-font: 1.18rem;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(124,199,255,.10), transparent 34rem),
+        radial-gradient(circle at 90% 5%, rgba(158,230,193,.08), transparent 30rem),
+        var(--bg);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(13,17,23,.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      width: min(var(--max), calc(100% - 28px));
+      margin: auto;
+      min-height: 76px;
+      display: grid;
+      grid-template-columns: minmax(0,1fr) auto;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand {
+      min-width: 0;
+    }
+
+    .brand .eyebrow {
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: .72rem;
+    }
+
+    .brand h1 {
+      margin: 2px 0 0;
+      font-size: clamp(1.02rem, 2.4vw, 1.35rem);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .timer-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #timer {
+      min-width: 96px;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+      font-size: 1.75rem;
+      font-weight: 900;
+      letter-spacing: .03em;
+    }
+
+    #timer.warning { color: var(--warning); }
+    #timer.danger { color: var(--danger); }
+
+    .progress-shell {
+      height: 5px;
+      background: rgba(255,255,255,.06);
+      overflow: hidden;
+    }
+
+    #progress {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      transition: width .2s ease;
+    }
+
+    .app {
+      width: min(var(--max), calc(100% - 28px));
+      margin: 24px auto 120px;
+      display: grid;
+      grid-template-columns: 260px minmax(0,1fr);
+      gap: 22px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 105px;
+      align-self: start;
+      background: rgba(21,27,35,.72);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    .sidebar-title {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-weight: 800;
+    }
+
+    .nav-btn {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 10px 11px;
+      border-radius: 11px;
+      text-align: left;
+      cursor: pointer;
+      font-size: .92rem;
+      margin: 2px 0;
+      display: flex;
+      gap: 9px;
+      align-items: center;
+    }
+
+    .nav-btn:hover { background: rgba(255,255,255,.05); color: var(--text); }
+    .nav-btn.active {
+      background: rgba(124,199,255,.12);
+      color: var(--text);
+      box-shadow: inset 3px 0 0 var(--accent);
+    }
+
+    .nav-num {
+      width: 24px;
+      height: 24px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      font-size: .75rem;
+      flex: 0 0 auto;
+    }
+
+    .kbd-note {
+      border-top: 1px solid var(--line);
+      margin-top: 12px;
+      padding-top: 12px;
+      font-size: .78rem;
+      color: var(--muted);
+    }
+
+    kbd {
+      background: #202938;
+      border: 1px solid #344054;
+      border-bottom-width: 2px;
+      border-radius: 5px;
+      padding: 1px 5px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: .72rem;
+    }
+
+    .stage { min-width: 0; }
+
+    .section {
+      display: none;
+      min-height: calc(100vh - 160px);
+      animation: fade .18s ease;
+    }
+
+    .section.active { display: block; }
+
+    @keyframes fade {
+      from { opacity: .45; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+
+    .section-head .label {
+      color: var(--accent);
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      font-weight: 900;
+    }
+
+    .section-head h2 {
+      margin: 3px 0 0;
+      font-size: clamp(1.8rem, 4vw, 3.15rem);
+      line-height: 1.05;
+      letter-spacing: -.03em;
+    }
+
+    .target-time {
+      flex: 0 0 auto;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--muted);
+      font-weight: 800;
+      font-size: .82rem;
+      white-space: nowrap;
+    }
+
+    .anchor {
+      margin: 18px 0 20px;
+      padding: 18px 20px;
+      border-radius: 16px;
+      border: 1px solid rgba(124,199,255,.24);
+      background: rgba(124,199,255,.08);
+      font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+      font-weight: 850;
+      line-height: 1.35;
+    }
+
+    .speaker-card {
+      background: linear-gradient(180deg, rgba(27,36,48,.96), rgba(21,27,35,.96));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: clamp(20px, 4vw, 34px);
+      box-shadow: var(--shadow);
+      font-size: var(--speaker-font);
+    }
+
+    .speaker-card p {
+      margin: 0 0 1.05em;
+      max-width: 72ch;
+    }
+
+    .speaker-card p:last-child { margin-bottom: 0; }
+
+    .speaker-card strong {
+      color: #fff;
+      font-weight: 900;
+    }
+
+    .cue {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--accent-2);
+      font-size: .75rem;
+      letter-spacing: .08em;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin: 18px 0 8px;
+    }
+
+    .cue.ask { color: var(--warning); }
+
+    .quote {
+      margin: 18px 0;
+      padding: 17px 19px;
+      border-left: 4px solid var(--accent);
+      background: rgba(255,255,255,.035);
+      border-radius: 0 14px 14px 0;
+      font-size: 1.08em;
+      font-weight: 750;
+    }
+
+    .question {
+      margin: 18px 0;
+      background: rgba(255,209,102,.075);
+      border: 1px solid rgba(255,209,102,.24);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .question .q {
+      font-size: 1.16em;
+      line-height: 1.35;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .pause {
+      color: var(--muted);
+      font-size: .88rem;
+      font-style: italic;
+    }
+
+    .fallback-toggle {
+      appearance: none;
+      border: 1px solid rgba(255,255,255,.14);
+      background: #202938;
+      color: var(--text);
+      border-radius: 10px;
+      padding: 9px 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .fallback-toggle:hover { filter: brightness(1.08); }
+
+    .fallback {
+      display: none;
+      margin-top: 12px;
+      padding: 13px 14px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.045);
+      color: #e8edf3;
+      font-size: .92em;
+    }
+
+    .fallback.show { display: block; }
+
+    .refs-inline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .ref-pill {
+      text-decoration: none;
+      color: var(--accent);
+      border: 1px solid rgba(124,199,255,.22);
+      background: rgba(124,199,255,.06);
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    .ref-pill:hover { background: rgba(124,199,255,.12); }
+
+    .micro {
+      color: var(--muted);
+      font-size: .86rem;
+    }
+
+    .bottom-controls {
+      position: fixed;
+      z-index: 60;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 16px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: rgba(13,17,23,.92);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--line);
+      padding: 8px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .control-btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #1b2430;
+      color: var(--text);
+      border-radius: 10px;
+      min-width: 42px;
+      height: 42px;
+      padding: 0 12px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .control-btn.primary {
+      background: rgba(124,199,255,.14);
+      border-color: rgba(124,199,255,.28);
+    }
+
+    .control-btn:hover { filter: brightness(1.08); }
+
+    .reference-drawer,
+    .help-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      display: none;
+      background: rgba(0,0,0,.72);
+      padding: 20px;
+      overflow: auto;
+    }
+
+    .reference-drawer.open,
+    .help-modal.open { display: grid; place-items: center; }
+
+    .modal-card {
+      width: min(860px, 100%);
+      max-height: 88vh;
+      overflow: auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .modal-card h3 { margin: 0 0 6px; font-size: 1.5rem; }
+    .modal-card .close-row { display: flex; justify-content: space-between; gap: 16px; align-items: start; }
+
+    .ref-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .ref-item {
+      display: grid;
+      gap: 4px;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255,255,255,.025);
+    }
+
+    .ref-item a {
+      color: var(--accent);
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .ref-item span {
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    body.compact .speaker-card { --speaker-font: 1.02rem; }
+
+    @media (max-width: 860px) {
+      .app { grid-template-columns: 1fr; }
+      .sidebar { display: none; }
+      .topbar-inner { grid-template-columns: minmax(0,1fr) auto; }
+      .section { min-height: auto; }
+      .speaker-card { padding: 20px; }
+      .section-head h2 { font-size: 2rem; }
+    }
+
+    @media (max-width: 560px) {
+      .brand .eyebrow { display: none; }
+      .topbar-inner { width: min(100% - 18px, var(--max)); min-height: 68px; }
+      #timer { font-size: 1.45rem; min-width: 80px; }
+      .app { width: min(100% - 18px, var(--max)); margin-top: 16px; }
+      .section-head { align-items: center; }
+      .target-time { padding: 6px 9px; }
+      .speaker-card { font-size: 1.02rem; border-radius: 16px; }
+      .bottom-controls { width: calc(100% - 18px); justify-content: center; bottom: 9px; }
+      .control-btn { min-width: 38px; padding: 0 9px; }
+      .hide-mobile { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    @media print {
+      .topbar, .sidebar, .bottom-controls, .reference-drawer, .help-modal { display: none !important; }
+      body { background: #fff; color: #000; }
+      .app { display: block; width: 100%; margin: 0; }
+      .section { display: block !important; min-height: 0; page-break-inside: avoid; margin-bottom: 24px; }
+      .speaker-card, .anchor, .question { box-shadow: none; color: #000; background: #fff; border-color: #ccc; }
+      .speaker-card strong { color: #000; }
+      .fallback { display: block; color: #000; }
+      .ref-pill { color: #000; border-color: #bbb; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="eyebrow">Vida e Ministério · 21–27 setembro 2026</div>
+        <h1>6. O que diria? — Seja adaptável como Filipe</h1>
+      </div>
+      <div class="timer-box">
+        <div id="timer" aria-live="polite">00:00</div>
+      </div>
+    </div>
+    <div class="progress-shell"><div id="progress"></div></div>
+  </header>
+
+  <main class="app">
+    <aside class="sidebar" aria-label="Secções">
+      <div class="sidebar-title">Roteiro · 6 min.</div>
+      <button class="nav-btn active" data-go="0"><span class="nav-num">1</span> Ideia central</button>
+      <button class="nav-btn" data-go="1"><span class="nav-num">2</span> Filipe</button>
+      <button class="nav-btn" data-go="2"><span class="nav-num">3</span> Lição 2:5</button>
+      <button class="nav-btn" data-go="3"><span class="nav-num">4</span> Pergunta 1</button>
+      <button class="nav-btn" data-go="4"><span class="nav-num">5</span> Pergunta 2</button>
+      <button class="nav-btn" data-go="5"><span class="nav-num">6</span> Conclusão</button>
+      <div class="kbd-note">
+        <div><kbd>←</kbd> <kbd>→</kbd> mudar secção</div>
+        <div><kbd>Espaço</kbd> cronómetro</div>
+        <div><kbd>R</kbd> referências</div>
+        <div><kbd>?</kbd> atalhos</div>
+      </div>
+    </aside>
+
+    <section class="stage">
+      <!-- 1 -->
+      <article class="section active" data-section="0">
+        <div class="section-head">
+          <div>
+            <div class="label">Abertura</div>
+            <h2>Adaptar é mais do que mudar de assunto.</h2>
+          </div>
+          <div class="target-time">≈ 0:55</div>
+        </div>
+
+        <div class="anchor">IDEIA-CHAVE: <strong>A pessoa é mais importante do que a apresentação.</strong></div>
+
+        <div class="speaker-card">
+          <div class="cue">Dizer</div>
+          <p>Quando ouvimos a expressão <strong>“seja adaptável”</strong>, podemos pensar simplesmente: “Se a pessoa mudar de assunto, eu mudo também.”</p>
+
+          <p>Mas adaptar-se no ministério é muito mais do que isso.</p>
+
+          <p>Pensem numa conversa normal. Se alguém de quem gostamos nos diz de repente:</p>
+
+          <div class="quote">“Olha, eu não estou nada bem. Tenho uma coisa que me está a preocupar muito.”</div>
+
+          <p>Nós não continuamos a falar do assunto anterior só porque era aquilo que tínhamos preparado.</p>
+
+          <div class="cue ask">Perguntar — breve</div>
+          <div class="question">
+            <div class="q">Porquê?</div>
+            <div class="pause">Pausa de 2–3 segundos. Não é necessário pedir respostas aqui.</div>
+          </div>
+
+          <p>Porque naquele momento, <strong>a pessoa tornou-se mais importante do que o assunto que tínhamos na cabeça.</strong></p>
+
+          <p>É isso que significa realmente adaptar-se no ministério: ouvir suficientemente bem para perceber o que está no coração da pessoa e estar disposto a deixar de lado o nosso plano.</p>
+
+          <div class="cue">Transição</div>
+          <p>E temos um exemplo muito claro disso no ministério de Filipe.</p>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="section" data-section="1">
+        <div class="section-head">
+          <div>
+            <div class="label">Modelo</div>
+            <h2>Filipe começou de onde a pessoa estava.</h2>
+          </div>
+          <div class="target-time">≈ 0:55</div>
+        </div>
+
+        <div class="anchor">ATOS 8:30-35: <strong>ouviu, perguntou, percebeu e adaptou.</strong></div>
+
+        <div class="speaker-card">
+          <div class="cue">Dizer</div>
+          <p>Temos um exemplo muito claro disso em <strong>Atos 8:30-35</strong>.</p>
+
+          <p>Quando Filipe se aproximou do eunuco etíope, reparem no que fez primeiro: <strong>ouviu</strong>.</p>
+
+          <p>Percebeu que o homem estava a ler o profeta Isaías e então fez uma pergunta: <strong>“Entendes realmente o que estás a ler?”</strong></p>
+
+          <p>O homem explicou a sua dúvida. E o versículo 35 diz que Filipe começou <strong>com aquela passagem das Escrituras</strong> para lhe falar sobre Jesus.</p>
+
+          <div class="anchor">Filipe <strong>não mudou a mensagem</strong>. Mudou <strong>o ponto de partida</strong>.</div>
+
+          <p>Ele começou por aquilo que, naquele momento, interessava à pessoa.</p>
+
+          <div class="cue">Resumo fácil</div>
+          <p><strong>Ouviu → perguntou → percebeu → adaptou.</strong></p>
+
+          <div class="refs-inline">
+            <a class="ref-pill" target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/b/r296/lp-tpo/nwtsty/44/8">Atos 8:30-35 — WOL</a>
+            <a class="ref-pill" target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/d/r296/lp-tpo/1102023302#h=15:0-15:238">Lição 2 — Naturalidade</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="section" data-section="2">
+        <div class="section-head">
+          <div>
+            <div class="label">Resumo da matéria</div>
+            <h2>Lição 2, ponto 5: esteja disposto a mudar o plano.</h2>
+          </div>
+          <div class="target-time">≈ 0:45</div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="cue">Resumir</div>
+          <p>A lição 2, ponto 5, da brochura <em>Ame as Pessoas — Faça Discípulos</em> mostra que a pessoa pode começar a falar de algo que <strong>não estávamos à espera</strong>.</p>
+
+          <p>Nesse momento, devemos estar dispostos a partilhar um ponto que seja do interesse dela, <strong>mesmo que seja diferente do que tínhamos planeado.</strong></p>
+
+          <p>Portanto, ser adaptável não significa apenas conhecer muitos assuntos. Significa <strong>escutar</strong> e perguntar mentalmente:</p>
+
+          <div class="quote">“Esta pessoa acabou de me dizer o que realmente a preocupa. Como posso usar a Bíblia para ajudá-la?”</div>
+
+          <div class="cue">Transição</div>
+          <p>Vamos aplicar isso a uma situação muito real no nosso território.</p>
+
+          <div class="refs-inline">
+            <a class="ref-pill" target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/d/r296/lp-tpo/1102023302#h=15:0-15:238">Ame as Pessoas — lição 2, ponto 5</a>
+            <a class="ref-pill" target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/dt/r296/lp-tpo/2026/9/22">Programa da semana — WOL</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="section" data-section="3">
+        <div class="section-head">
+          <div>
+            <div class="label">Participação da assistência</div>
+            <h2>“Está tudo cada vez mais caro...”</h2>
+          </div>
+          <div class="target-time">≈ 1:15</div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="cue">Situação</div>
+          <div class="quote">O morador diz: “Estou preocupado com o aumento do custo de vida. Parece que tudo aumenta e o dinheiro chega cada vez para menos.”</div>
+
+          <div class="question">
+            <div class="cue ask">Pergunta à assistência</div>
+            <div class="q">O que diria para mostrar que entende a preocupação dele?</div>
+            <div class="pause">Olhar para a assistência. Dar tempo real para 1–2 respostas.</div>
+
+            <button class="fallback-toggle" type="button">Se ninguém levantar a mão</button>
+            <div class="fallback">
+              <p><strong>Opção 1:</strong> “Compreendo. Mesmo quando tentamos organizar bem as despesas, vemos os preços a aumentar e é normal perguntarmo-nos como vamos conseguir pagar tudo.”</p>
+              <p><strong>Opção 2:</strong> “É verdade. E o difícil é que não estamos a falar de luxos, mas de coisas básicas de que precisamos todos os dias.”</p>
+              <p><strong>Opção 3:</strong> “Imagino. Deve ser angustiante estar sempre a fazer contas e pensar se o dinheiro vai chegar até ao fim do mês.”</p>
+            </div>
+          </div>
+
+          <div class="cue">Ponto a fixar</div>
+          <p>Notem: ainda não tentámos corrigir a pessoa nem dizer-lhe “não se preocupe”.</p>
+
+          <p>Primeiro mostramos: <strong>“Eu ouvi-o. Eu percebi o que o preocupa.”</strong></p>
+
+          <p>Foi exatamente isso que Filipe fez. Antes de ensinar, <strong>ouviu e percebeu o que estava na mente daquele homem.</strong></p>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="section" data-section="4">
+        <div class="section-head">
+          <div>
+            <div class="label">Participação da assistência</div>
+            <h2>Que verdade da Bíblia poderia usar?</h2>
+          </div>
+          <div class="target-time">≈ 1:35</div>
+        </div>
+
+        <div class="anchor">APÊNDICE A: <strong>não é um guião; é uma caixa de ferramentas.</strong></div>
+
+        <div class="speaker-card">
+          <div class="question">
+            <div class="cue ask">Pergunta à assistência</div>
+            <div class="q">Que verdade da Bíblia é que poderia usar?</div>
+            <div class="pause">Dar tempo para várias respostas. Depois ligar as respostas ao Apêndice A.</div>
+
+            <button class="fallback-toggle" type="button">Se ninguém levantar a mão</button>
+            <div class="fallback">
+              <p><strong>Mateus 6:34:</strong> Jesus deu um conselho prático para não ficarmos consumidos pela ansiedade acerca do amanhã.</p>
+              <p><strong>Salmo 46:1 / 145:18, 19:</strong> “Deus quer ajudar-nos” — verdade do Apêndice A.</p>
+              <p><strong>Isaías 65:21-23:</strong> o Reino de Deus traz uma solução duradoura, com segurança e possibilidade de desfrutar do resultado do próprio trabalho.</p>
+            </div>
+          </div>
+
+          <div class="cue">Explicar</div>
+          <p>É aqui que o <strong>Apêndice A — “Verdades que gostamos muito de ensinar”</strong> nos ajuda muito.</p>
+
+          <p>Se a pessoa está ansiosa com o futuro, podemos usar <strong>Mateus 6:34</strong> e mostrar que os conselhos de Jesus continuam a ser práticos.</p>
+
+          <p>Se a pessoa precisa sobretudo de sentir que Deus se importa, podemos partir da verdade <strong>“Deus quer ajudar-nos”</strong>, usando <strong>Salmo 46:1</strong> ou <strong>Salmo 145:18, 19</strong>.</p>
+
+          <p>E se a conversa mostrar que ela está à procura de uma solução definitiva, podemos usar a verdade de que <strong>o Reino de Deus é a solução para os problemas da humanidade</strong> e considerar <strong>Isaías 65:21-23</strong>.</p>
+
+          <div class="anchor">O mesmo problema pode levar a <strong>verdades diferentes</strong>, porque estamos a responder à pessoa, não apenas ao tema.</div>
+
+          <div class="refs-inline">
+            <a class="ref-pill" target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/d/r296/lp-tpo/1102023316">Apêndice A — WOL</a>
+            <a class="ref-pill" target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/b/r296/lp-tpo/nwtsty/40/6">Mateus 6</a>
+            <a class="ref-pill" target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/b/r296/lp-tpo/nwtsty/19/46">Salmo 46</a>
+            <a class="ref-pill" target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/b/r296/lp-tpo/nwtsty/19/145">Salmo 145</a>
+            <a class="ref-pill" target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/b/r296/lp-tpo/nwtsty/23/65">Isaías 65</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="section" data-section="5">
+        <div class="section-head">
+          <div>
+            <div class="label">Conclusão</div>
+            <h2>Quando a pessoa muda a conversa, talvez tenha aberto o coração.</h2>
+          </div>
+          <div class="target-time">≈ 0:35</div>
+        </div>
+
+        <div class="speaker-card">
+          <div class="cue">Fechar</div>
+          <p>Então, se alguém muda o rumo da conversa, <strong>isso não significa que a nossa apresentação correu mal.</strong></p>
+
+          <p>Talvez seja precisamente nesse momento que a pessoa começou a dizer o que realmente está no coração dela.</p>
+
+          <p>Podemos fazer como Filipe:</p>
+
+          <div class="anchor"><strong>Ouvir. Perceber. Adaptar.</strong></div>
+
+          <p>A verdade não muda. A mensagem não muda. Mas <strong>a forma como chegamos ao coração de cada pessoa pode mudar.</strong></p>
+
+          <p>Por isso, em vez de pensarmos:</p>
+          <div class="quote">“Como volto à minha apresentação?”</div>
+
+          <p>podemos pensar:</p>
+          <div class="quote">“O que é que esta pessoa acabou de me revelar — e que verdade da Bíblia poderá ajudá-la?”</div>
+
+          <p><strong>Filipe não mudou a mensagem. Mudou o ponto de partida. É isso que significa realmente ser adaptável.</strong></p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="bottom-controls" aria-label="Controlos do orador">
+    <button class="control-btn" id="prevBtn" title="Secção anterior">←</button>
+    <button class="control-btn primary" id="timerBtn" title="Iniciar/Pausar cronómetro">▶</button>
+    <button class="control-btn" id="nextBtn" title="Secção seguinte">→</button>
+    <button class="control-btn hide-mobile" id="fontDown" title="Diminuir letra">A−</button>
+    <button class="control-btn hide-mobile" id="fontUp" title="Aumentar letra">A+</button>
+    <button class="control-btn" id="refsBtn" title="Referências">Refs</button>
+    <button class="control-btn hide-mobile" id="fullscreenBtn" title="Ecrã inteiro">⛶</button>
+  </div>
+
+  <div class="reference-drawer" id="referenceDrawer" role="dialog" aria-modal="true" aria-labelledby="refsTitle">
+    <div class="modal-card">
+      <div class="close-row">
+        <div>
+          <h3 id="refsTitle">Referências</h3>
+          <div class="micro">Links oficiais para consulta rápida. Abrem numa nova aba.</div>
+        </div>
+        <button class="control-btn" id="closeRefs">✕</button>
+      </div>
+
+      <div class="ref-list">
+        <div class="ref-item">
+          <a target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/dt/r296/lp-tpo/2026/9/22">Programa — 21 a 27 de setembro de 2026</a>
+          <span>“O que diria?” — 6 min., casa em casa.</span>
+        </div>
+
+        <div class="ref-item">
+          <a target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/d/r296/lp-tpo/1102023302#h=15:0-15:238">Ame as Pessoas — Lição 2: Naturalidade, ponto 5</a>
+          <span>Base principal da consideração: estar disposto a falar sobre algo diferente do planeado quando é do interesse da pessoa.</span>
+        </div>
+
+        <div class="ref-item">
+          <a target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/d/r296/lp-tpo/1102023316">Apêndice A — Verdades que gostamos muito de ensinar</a>
+          <span>Inclui temas como Deus, Jesus, Reino de Deus, sofrimento e futuro.</span>
+        </div>
+
+        <div class="ref-item">
+          <a target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/b/r296/lp-tpo/nwtsty/44/8">Atos 8:30-35</a>
+          <span>Filipe ouve o eunuco etíope, faz uma pergunta e começa exatamente a partir da passagem que ele estava a ler.</span>
+        </div>
+
+        <div class="ref-item">
+          <a target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/b/r296/lp-tpo/nwtsty/40/6">Mateus 6:34</a>
+          <span>Conselho de Jesus sobre ansiedade em relação ao amanhã.</span>
+        </div>
+
+        <div class="ref-item">
+          <a target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/b/r296/lp-tpo/nwtsty/19/46">Salmo 46:1</a>
+          <span>Deus como ajuda em tempos de aflição.</span>
+        </div>
+
+        <div class="ref-item">
+          <a target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/b/r296/lp-tpo/nwtsty/19/145">Salmo 145:18, 19</a>
+          <span>Ligado no Apêndice A à verdade “Deus quer ajudar-nos”.</span>
+        </div>
+
+        <div class="ref-item">
+          <a target="_blank" rel="noopener" href="https://wol.jw.org/pt-PT/wol/b/r296/lp-tpo/nwtsty/23/65">Isaías 65:21-23</a>
+          <span>Ligado no Apêndice A à solução do Reino para os problemas da humanidade.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="help-modal" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+    <div class="modal-card">
+      <div class="close-row">
+        <div>
+          <h3 id="helpTitle">Atalhos do orador</h3>
+          <div class="micro">Pensados para evitar procurar botões durante a apresentação.</div>
+        </div>
+        <button class="control-btn" id="closeHelp">✕</button>
+      </div>
+
+      <div class="ref-list">
+        <div class="ref-item"><strong>← / →</strong><span>Secção anterior / seguinte</span></div>
+        <div class="ref-item"><strong>Espaço</strong><span>Iniciar ou pausar o cronómetro</span></div>
+        <div class="ref-item"><strong>R</strong><span>Abrir/fechar referências</span></div>
+        <div class="ref-item"><strong>+ / −</strong><span>Aumentar / diminuir o tamanho do texto</span></div>
+        <div class="ref-item"><strong>F</strong><span>Entrar ou sair do ecrã inteiro</span></div>
+        <div class="ref-item"><strong>0</strong><span>Repor o cronómetro</span></div>
+        <div class="ref-item"><strong>Esc</strong><span>Fechar janelas</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (() => {
+      const sections = [...document.querySelectorAll('.section')];
+      const navButtons = [...document.querySelectorAll('.nav-btn')];
+      const timerEl = document.getElementById('timer');
+      const progressEl = document.getElementById('progress');
+      const timerBtn = document.getElementById('timerBtn');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const fontDown = document.getElementById('fontDown');
+      const fontUp = document.getElementById('fontUp');
+      const refsBtn = document.getElementById('refsBtn');
+      const referenceDrawer = document.getElementById('referenceDrawer');
+      const closeRefs = document.getElementById('closeRefs');
+      const helpModal = document.getElementById('helpModal');
+      const closeHelp = document.getElementById('closeHelp');
+      const fullscreenBtn = document.getElementById('fullscreenBtn');
+
+      const TOTAL_SECONDS = 6 * 60;
+      let current = 0;
+      let elapsed = 0;
+      let running = false;
+      let timerHandle = null;
+      let fontSize = Number(localStorage.getItem('speakerFontSize') || 1.18);
+
+      // -.-.-.-
+      function showSection(index) {
+        current = Math.max(0, Math.min(sections.length - 1, index));
+
+        sections.forEach((section, i) => {
+          section.classList.toggle('active', i === current);
+        });
+
+        navButtons.forEach((button, i) => {
+          button.classList.toggle('active', i === current);
+        });
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      // -.-.-.-
+      function formatTime(seconds) {
+        const min = String(Math.floor(seconds / 60)).padStart(2, '0');
+        const sec = String(seconds % 60).padStart(2, '0');
+        return `${min}:${sec}`;
+      }
+
+      // -.-.-.-
+      function updateTimer() {
+        timerEl.textContent = formatTime(elapsed);
+        const pct = Math.min(100, (elapsed / TOTAL_SECONDS) * 100);
+        progressEl.style.width = `${pct}%`;
+
+        timerEl.classList.toggle('warning', elapsed >= 300 && elapsed < 340);
+        timerEl.classList.toggle('danger', elapsed >= 340);
+
+        if (elapsed >= TOTAL_SECONDS && navigator.vibrate) {
+          navigator.vibrate(120);
+        }
+      }
+
+      // -.-.-.-
+      function toggleTimer() {
+        running = !running;
+        timerBtn.textContent = running ? 'Ⅱ' : '▶';
+
+        if (running) {
+          timerHandle = window.setInterval(() => {
+            elapsed += 1;
+            updateTimer();
+          }, 1000);
+        } else {
+          window.clearInterval(timerHandle);
+          timerHandle = null;
+        }
+      }
+
+      // -.-.-.-
+      function resetTimer() {
+        running = false;
+        window.clearInterval(timerHandle);
+        timerHandle = null;
+        elapsed = 0;
+        timerBtn.textContent = '▶';
+        updateTimer();
+      }
+
+      // -.-.-.-
+      function setFontSize(value) {
+        fontSize = Math.max(.92, Math.min(1.55, value));
+        document.documentElement.style.setProperty('--speaker-font', `${fontSize}rem`);
+        localStorage.setItem('speakerFontSize', fontSize.toFixed(2));
+      }
+
+      // -.-.-.-
+      function toggleRefs(force) {
+        const open = typeof force === 'boolean'
+          ? force
+          : !referenceDrawer.classList.contains('open');
+
+        referenceDrawer.classList.toggle('open', open);
+      }
+
+      // -.-.-.-
+      function toggleHelp(force) {
+        const open = typeof force === 'boolean'
+          ? force
+          : !helpModal.classList.contains('open');
+
+        helpModal.classList.toggle('open', open);
+      }
+
+      // -.-.-.-
+      async function toggleFullscreen() {
+        try {
+          if (!document.fullscreenElement) {
+            await document.documentElement.requestFullscreen();
+          } else {
+            await document.exitFullscreen();
+          }
+        } catch (error) {
+          console.warn('Fullscreen unavailable:', error);
+        }
+      }
+
+      navButtons.forEach(button => {
+        button.addEventListener('click', () => showSection(Number(button.dataset.go)));
+      });
+
+      document.querySelectorAll('.fallback-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+          const fallback = button.nextElementSibling;
+          fallback.classList.toggle('show');
+          button.textContent = fallback.classList.contains('show')
+            ? 'Ocultar respostas de apoio'
+            : 'Se ninguém levantar a mão';
+        });
+      });
+
+      prevBtn.addEventListener('click', () => showSection(current - 1));
+      nextBtn.addEventListener('click', () => showSection(current + 1));
+      timerBtn.addEventListener('click', toggleTimer);
+      fontDown.addEventListener('click', () => setFontSize(fontSize - .08));
+      fontUp.addEventListener('click', () => setFontSize(fontSize + .08));
+      refsBtn.addEventListener('click', () => toggleRefs());
+      closeRefs.addEventListener('click', () => toggleRefs(false));
+      closeHelp.addEventListener('click', () => toggleHelp(false));
+      fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+      referenceDrawer.addEventListener('click', event => {
+        if (event.target === referenceDrawer) toggleRefs(false);
+      });
+
+      helpModal.addEventListener('click', event => {
+        if (event.target === helpModal) toggleHelp(false);
+      });
+      document.addEventListener('keydown', event => {
+        const tag = document.activeElement?.tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+
+        if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          showSection(current + 1);
+        } else if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          showSection(current - 1);
+        } else if (event.code === 'Space') {
+          event.preventDefault();
+          toggleTimer();
+        } else if (event.key.toLowerCase() === 'r') {
+          event.preventDefault();
+          toggleRefs();
+        } else if (event.key.toLowerCase() === 'f') {
+          event.preventDefault();
+          toggleFullscreen();
+        } else if (event.key === '+' || event.key === '=') {
+          event.preventDefault();
+          setFontSize(fontSize + .08);
+        } else if (event.key === '-' || event.key === '_') {
+          event.preventDefault();
+          setFontSize(fontSize - .08);
+        } else if (event.key === '0') {
+          event.preventDefault();
+          resetTimer();
+        } else if (event.key === '?') {
+          event.preventDefault();
+          toggleHelp();
+        } else if (event.key === 'Escape') {
+          toggleRefs(false);
+          toggleHelp(false);
+        }
+      });
+
+      setFontSize(fontSize);
+      updateTimer();
+      showSection(0);
+    })();
+  </script>
+</body>
+</html>
